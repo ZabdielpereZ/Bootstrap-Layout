@@ -24,7 +24,17 @@ css        * {
     background-color: white;
   } */
 
-  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #8064A2 !important;
+
+/* ask about giving buttons :active and color change.  */
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #8064A2 !important;
 }
  
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+a :active {
+  background-color: chartreuse;
+}
