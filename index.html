@@ -1,7 +1,8 @@
 <!doctype html>
+<!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Bootstrap Components</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -30,20 +31,22 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Link</a>
                       </li>
+                      <!-- Ask about activating dropdown? -->
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                           Dropdown
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <!-- Added dropdown-item-text shows items-->
+                        <ul class="dropdown-menu dropdown-item-text " aria-labelledby="navbarDropdown">
+                          <li><a class="bootstarp Dropdown Text" href="https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php#:~:text=To%20open%20the%20dropdown%20menu,actually%20build%20the%20dropdown%20menu." target="_blank">Dropdown Text</a></li>
+                          <li><a class="Cards" href="https://getbootstrap.com/docs/5.1/components/card/">Cards</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="Progress Bar" href="https://getbootstrap.com/docs/5.0/components/progress/">Progress Bar</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -59,6 +62,59 @@
               </nav>
         </header>
         <main>
+          <!-- Card -->
+          <div class="card-group">
+            <div class="card">
+              <img src="software.jpg" class="card-img-top" alt="Software image">
+              <div class="card-body">
+                <h5 class="card-title">Software</h5>
+                <p class="card-text">System Software: This includes operating systems like Windows, macOS, and Linux, which manage hardware resources and provide services for application software.
+                  Application Software: These are programs designed to perform specific tasks for users, such as word processors, web browsers, and games.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="https://www.techtarget.com/searchapparchitecture/definition/software#:~:text=It%20is%20the%20opposite%20of,hardware%20is%20the%20invariable%20part." target="_blank" class="btn btn-primary">Learn About Software</a>
+                <!-- Button Active hover-->
+                <style>
+                  .btn-primary:hover {
+                     /* background-color: #964707;
+                      border-color: #004085; */
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                      transform: scale(1.1);
+                      transition: all 0.2s;
+                  }
+                  </style>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Google Chrome</li>
+                  <li class="list-group-item">Google Drive</li>
+                  <li class="list-group-item">Google Docs</li>
+              </div>
+            </div>
+            <div class="card">
+              <img src="techimg.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hardware</h5>
+                <p class="card-text">Computer hardware refers to the physical components of a computer system, such as the central processing unit (CPU), memory modules, storage devices, and input/output peripherals, which work together to perform computing tasks.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="https://www.techtarget.com/searchnetworking/definition/hardware" class="btn btn-primary" target="_blank">Learn About Hardware</a>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Laptop</li>
+                  <li class="list-group-item">Graphics Card</li>
+                  <li class="list-group-item">motherboard</li>
+              </div>
+            </div>
+            <div class="card">
+              <img src="web.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Web development is the process of creating and maintaining websites and web applications, involving tasks such as coding, designing, and ensuring the functionality of a site or app on the internet.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="https://radixweb.com/blog/web-development-tools" class="btn btn-primary" target="_blank">Learn About Web Development Tools</a>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">VSCode</li>
+                  <li class="list-group-item">MySQL</li>
+                  <li class="list-group-item">Bootstrap5</li>
+              </div>
+            </div>
+          </div>
             <!-- Main Content -->
             <div class=".container-fluid m-1" >
                 <div class="row bg-success">
@@ -99,14 +155,15 @@
                   </div>
                   <div style="background-image: url(https://i.pinimg.com/736x/a3/45/bb/a345bb2c696e793a472e380cf2edc25d.jpg);" class="sidebar col-sm-2 bg-info p-3">
                     <h5 class="text-center text-decoration-underline text-light">Right sidebar</h5>
-                    <div class="p-2 bd-highlight text-light text-center">Add?</div>
-                    <div class="p-2 bd-highlight text-light text-center">Add?</div>
+                    <div class="p-2 bd-highlight text-light text-center">Add</div>
+                    <div class="p-2 bd-highlight text-light text-center">Add</div>
                   </div>
                 </div>
               <br><br>
         </main>
         <section>
             <form>
+              <!-- Forms -->
                 <div class="mb-3 p-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -122,6 +179,9 @@
                 </div>
                 <button type="submit" class="btn btn-primary m-3">Submit</button>
               </form>
+              <div class="progress m-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
         </section><br>
         <!-- html   <button id='runaway-btn'>Click Me &#129315;</button> -->
         
